@@ -1,0 +1,43 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>X32 OSC Workbench</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+    <h1>X32 OSC Workbench</h1>
+
+    <section>
+      <div class="form-item">
+        <label for="ip">X32 IP Address</label>
+        <input id="ip" value="192.168.0.30" />
+      </div>
+      <div class="form-item">
+        <button id="connect">Connect</button>
+        <button id="disconnect">Disconnect</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="form-item">
+        <label for="address">OSC Address</label>
+        <input id="address" />
+      </div>
+      <div class="form-item">
+        <label for="args">OSC Args</label>
+        <textarea id="args">[]</textarea>
+      </div>
+      <div class="form-item">
+        <button id="send">Request</button>
+      </div>
+    </section>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    
+  </body>
+</html>
