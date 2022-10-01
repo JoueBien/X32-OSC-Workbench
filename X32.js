@@ -76,6 +76,21 @@ module.exports = class X32 {
       * linear = Math.pow(10,(parseFloat(fullscale)/20))
       * fullscale = (Math.log(parseFloat(linear))/Math.LN10)*20
      */
+
+      /**
+       * /formatsubscribe
+       * [{"type":"s","value":"/testme"},{"type":"s","value":"/ch/01/mix/fader"},{"type":"s","value":"/ch/02/mix/fader"},  {"type" :"i", "value": 0},  {"type" :"i", "value": 0}, {"type" :"i", "value": 50}]
+       */
+
+
+      /**
+       * a
+       * [
+          {"type":"s","value":"/testme"},
+          {"type": "s", "value": "/meters/1"},
+          {"type" :"i", "value": 0},  {"type" :"i", "value": 0}, {"type" :"i", "value": 50}
+          ]
+       */
     this.udpPort.send({
       address: address,
       args: args || []
